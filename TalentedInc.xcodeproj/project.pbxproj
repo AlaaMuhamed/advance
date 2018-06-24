@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844992D220D557190089C63F /* OfferedCoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844992D120D557190089C63F /* OfferedCoursesViewModel.swift */; };
+		846ABDF820D2F5890002CDC6 /* offeredCourses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846ABDF720D2F5890002CDC6 /* offeredCourses.storyboard */; };
+		846ABDFB20D2FA3D0002CDC6 /* OfferedCoursesCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ABDFA20D2FA3D0002CDC6 /* OfferedCoursesCustomCell.swift */; };
+		846ABDFD20D53E6E0002CDC6 /* OfferedCoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ABDFC20D53E6E0002CDC6 /* OfferedCoursesViewController.swift */; };
+		846ABDFF20D54EA50002CDC6 /* offeredCoursesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846ABDFE20D54EA50002CDC6 /* offeredCoursesClient.swift */; };
+		84767A3620D1BB72006F1B8C /* skillbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 84767A3520D1BB71006F1B8C /* skillbackground.png */; };
+		8481A2C020D17AA700449737 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8481A2BF20D17AA700449737 /* profile.storyboard */; };
+		8481A2C220D17F6A00449737 /* backgroundflat.png in Resources */ = {isa = PBXBuildFile; fileRef = 8481A2C120D17F6A00449737 /* backgroundflat.png */; };
+		8481A2C520D195B700449737 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 8481A2C420D195B600449737 /* placeholder.png */; };
+		8481A2D220D19DA300449737 /* mailicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8481A2CE20D19DA200449737 /* mailicon.png */; };
+		8481A2D320D19DA300449737 /* locationicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8481A2CF20D19DA200449737 /* locationicon.png */; };
+		8481A2D420D19DA300449737 /* phoneicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8481A2D020D19DA300449737 /* phoneicon.png */; };
+		8481A2D520D19DA300449737 /* cakeicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8481A2D120D19DA300449737 /* cakeicon.png */; };
+		8481A2D920D1A2C400449737 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481A2D820D1A2C400449737 /* ProfileViewController.swift */; };
+		848239AB20D5D02700632CAE /* OfferedCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848239AA20D5D02700632CAE /* OfferedCourse.swift */; };
+		848239AF20D5E1DC00632CAE /* OfferedCourseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848239AE20D5E1DC00632CAE /* OfferedCourseDetails.swift */; };
+		84AEAF0C20C75C3500E5006A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEAF0B20C75C3500E5006A /* AppDelegate.swift */; };
+		84AEAF0E20C75C3500E5006A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEAF0D20C75C3500E5006A /* ViewController.swift */; };
+		84AEAF1120C75C3500E5006A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AEAF0F20C75C3500E5006A /* Main.storyboard */; };
+		84AEAF1320C75C4E00E5006A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84AEAF1220C75C4E00E5006A /* Assets.xcassets */; };
+		84AEAF1620C75C4E00E5006A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AEAF1420C75C4E00E5006A /* LaunchScreen.storyboard */; };
+		84AEAF2120C75C4E00E5006A /* TalentedIncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEAF2020C75C4E00E5006A /* TalentedIncTests.swift */; };
+		84AEAF2C20C75C4E00E5006A /* TalentedIncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEAF2B20C75C4E00E5006A /* TalentedIncUITests.swift */; };
+		84DD98AF20D6CBC70046508F /* InstructorOfferedCourses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD98AE20D6CBC70046508F /* InstructorOfferedCourses.swift */; };
+		84DD98B120D6CE7E0046508F /* instructorCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD98B020D6CE7E0046508F /* instructorCustomCell.swift */; };
+		84DD98B320D6D1020046508F /* InstructorCoursesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD98B220D6D1020046508F /* InstructorCoursesClient.swift */; };
+		84DD98B520D6D2E50046508F /* InstructorCoursesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD98B420D6D2E50046508F /* InstructorCoursesViewModel.swift */; };
+		EFF6B0ED30AEC420C416E349 /* Pods_TalentedInc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EFB19A60805FA02ECB5C82 /* Pods_TalentedInc.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84AEAF1D20C75C4E00E5006A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AEAF0020C75C3500E5006A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84AEAF0720C75C3500E5006A;
+			remoteInfo = TalentedInc;
+		};
+		84AEAF2820C75C4E00E5006A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AEAF0020C75C3500E5006A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84AEAF0720C75C3500E5006A;
+			remoteInfo = TalentedInc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21EFB19A60805FA02ECB5C82 /* Pods_TalentedInc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalentedInc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844992D120D557190089C63F /* OfferedCoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfferedCoursesViewModel.swift; path = TalentedInc/view/offeredcoursesviews/OfferedCoursesViewModel.swift; sourceTree = SOURCE_ROOT; };
+		846ABDF720D2F5890002CDC6 /* offeredCourses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = offeredCourses.storyboard; sourceTree = "<group>"; };
+		846ABDFA20D2FA3D0002CDC6 /* OfferedCoursesCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferedCoursesCustomCell.swift; sourceTree = "<group>"; };
+		846ABDFC20D53E6E0002CDC6 /* OfferedCoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferedCoursesViewController.swift; sourceTree = "<group>"; };
+		846ABDFE20D54EA50002CDC6 /* offeredCoursesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = offeredCoursesClient.swift; path = TalentedInc/view/offeredcoursesviews/offeredCoursesClient.swift; sourceTree = SOURCE_ROOT; };
+		84767A3520D1BB71006F1B8C /* skillbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skillbackground.png; sourceTree = "<group>"; };
+		8481A2BF20D17AA700449737 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
+		8481A2C120D17F6A00449737 /* backgroundflat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundflat.png; sourceTree = "<group>"; };
+		8481A2C420D195B600449737 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		8481A2CE20D19DA200449737 /* mailicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mailicon.png; sourceTree = "<group>"; };
+		8481A2CF20D19DA200449737 /* locationicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationicon.png; sourceTree = "<group>"; };
+		8481A2D020D19DA300449737 /* phoneicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phoneicon.png; sourceTree = "<group>"; };
+		8481A2D120D19DA300449737 /* cakeicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cakeicon.png; sourceTree = "<group>"; };
+		8481A2D820D1A2C400449737 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		848239AA20D5D02700632CAE /* OfferedCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfferedCourse.swift; path = TalentedInc/view/offeredcoursesviews/OfferedCourse.swift; sourceTree = SOURCE_ROOT; };
+		848239AE20D5E1DC00632CAE /* OfferedCourseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferedCourseDetails.swift; sourceTree = "<group>"; };
+		84AEAF0820C75C3500E5006A /* TalentedInc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentedInc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AEAF0B20C75C3500E5006A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84AEAF0D20C75C3500E5006A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84AEAF1020C75C3500E5006A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84AEAF1220C75C4E00E5006A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84AEAF1520C75C4E00E5006A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84AEAF1720C75C4E00E5006A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AEAF1C20C75C4E00E5006A /* TalentedIncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalentedIncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AEAF2020C75C4E00E5006A /* TalentedIncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentedIncTests.swift; sourceTree = "<group>"; };
+		84AEAF2220C75C4E00E5006A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AEAF2720C75C4E00E5006A /* TalentedIncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalentedIncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84AEAF2B20C75C4E00E5006A /* TalentedIncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalentedIncUITests.swift; sourceTree = "<group>"; };
+		84AEAF2D20C75C4F00E5006A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DD98AE20D6CBC70046508F /* InstructorOfferedCourses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorOfferedCourses.swift; sourceTree = "<group>"; };
+		84DD98B020D6CE7E0046508F /* instructorCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instructorCustomCell.swift; sourceTree = "<group>"; };
+		84DD98B220D6D1020046508F /* InstructorCoursesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstructorCoursesClient.swift; path = TalentedInc/view/offeredcoursesviews/InstructorCoursesClient.swift; sourceTree = SOURCE_ROOT; };
+		84DD98B420D6D2E50046508F /* InstructorCoursesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InstructorCoursesViewModel.swift; path = TalentedInc/view/offeredcoursesviews/InstructorCoursesViewModel.swift; sourceTree = SOURCE_ROOT; };
+		923324970B4CD1BF1BAD13F5 /* Pods-TalentedInc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentedInc.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalentedInc/Pods-TalentedInc.release.xcconfig"; sourceTree = "<group>"; };
+		F6B633C0B1618E733ACF4842 /* Pods-TalentedInc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentedInc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalentedInc/Pods-TalentedInc.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84AEAF0520C75C3500E5006A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF6B0ED30AEC420C416E349 /* Pods_TalentedInc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AEAF1920C75C4E00E5006A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AEAF2420C75C4E00E5006A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50D3F700BF0B7FA9BCD1DA1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6B633C0B1618E733ACF4842 /* Pods-TalentedInc.debug.xcconfig */,
+				923324970B4CD1BF1BAD13F5 /* Pods-TalentedInc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		846ABDF920D2F9B40002CDC6 /* offeredcoursesviews */ = {
+			isa = PBXGroup;
+			children = (
+				846ABDFA20D2FA3D0002CDC6 /* OfferedCoursesCustomCell.swift */,
+				846ABDFC20D53E6E0002CDC6 /* OfferedCoursesViewController.swift */,
+				848239AE20D5E1DC00632CAE /* OfferedCourseDetails.swift */,
+				84DD98AE20D6CBC70046508F /* InstructorOfferedCourses.swift */,
+				84DD98B020D6CE7E0046508F /* instructorCustomCell.swift */,
+			);
+			path = offeredcoursesviews;
+			sourceTree = "<group>";
+		};
+		8481A2BA20D17A0900449737 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				846ABDF920D2F9B40002CDC6 /* offeredcoursesviews */,
+				8481A2D820D1A2C400449737 /* ProfileViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8481A2BB20D17A2800449737 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				844992D120D557190089C63F /* OfferedCoursesViewModel.swift */,
+				84DD98B420D6D2E50046508F /* InstructorCoursesViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		8481A2BC20D17A4800449737 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				848239AA20D5D02700632CAE /* OfferedCourse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8481A2BD20D17A5200449737 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				846ABDFE20D54EA50002CDC6 /* offeredCoursesClient.swift */,
+				84DD98B220D6D1020046508F /* InstructorCoursesClient.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		8481A2BE20D17A6300449737 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8481A2BF20D17AA700449737 /* profile.storyboard */,
+				846ABDF720D2F5890002CDC6 /* offeredCourses.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		8481A2C320D17F6D00449737 /* assests */ = {
+			isa = PBXGroup;
+			children = (
+				8481A2C120D17F6A00449737 /* backgroundflat.png */,
+				8481A2C420D195B600449737 /* placeholder.png */,
+				8481A2D120D19DA300449737 /* cakeicon.png */,
+				8481A2CF20D19DA200449737 /* locationicon.png */,
+				8481A2CE20D19DA200449737 /* mailicon.png */,
+				8481A2D020D19DA300449737 /* phoneicon.png */,
+				84767A3520D1BB71006F1B8C /* skillbackground.png */,
+			);
+			path = assests;
+			sourceTree = "<group>";
+		};
+		84AEAEFF20C75C3500E5006A = {
+			isa = PBXGroup;
+			children = (
+				84AEAF0A20C75C3500E5006A /* TalentedInc */,
+				84AEAF1F20C75C4E00E5006A /* TalentedIncTests */,
+				84AEAF2A20C75C4E00E5006A /* TalentedIncUITests */,
+				84AEAF0920C75C3500E5006A /* Products */,
+				50D3F700BF0B7FA9BCD1DA1E /* Pods */,
+				EE6FC4522E5FF03210E4B483 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84AEAF0920C75C3500E5006A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84AEAF0820C75C3500E5006A /* TalentedInc.app */,
+				84AEAF1C20C75C4E00E5006A /* TalentedIncTests.xctest */,
+				84AEAF2720C75C4E00E5006A /* TalentedIncUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84AEAF0A20C75C3500E5006A /* TalentedInc */ = {
+			isa = PBXGroup;
+			children = (
+				8481A2C320D17F6D00449737 /* assests */,
+				8481A2BE20D17A6300449737 /* storyboards */,
+				8481A2BD20D17A5200449737 /* interactor */,
+				8481A2BC20D17A4800449737 /* model */,
+				8481A2BB20D17A2800449737 /* viewmodel */,
+				8481A2BA20D17A0900449737 /* view */,
+				84AEAF0B20C75C3500E5006A /* AppDelegate.swift */,
+				84AEAF0D20C75C3500E5006A /* ViewController.swift */,
+				84AEAF0F20C75C3500E5006A /* Main.storyboard */,
+				84AEAF1220C75C4E00E5006A /* Assets.xcassets */,
+				84AEAF1420C75C4E00E5006A /* LaunchScreen.storyboard */,
+				84AEAF1720C75C4E00E5006A /* Info.plist */,
+			);
+			path = TalentedInc;
+			sourceTree = "<group>";
+		};
+		84AEAF1F20C75C4E00E5006A /* TalentedIncTests */ = {
+			isa = PBXGroup;
+			children = (
+				84AEAF2020C75C4E00E5006A /* TalentedIncTests.swift */,
+				84AEAF2220C75C4E00E5006A /* Info.plist */,
+			);
+			path = TalentedIncTests;
+			sourceTree = "<group>";
+		};
+		84AEAF2A20C75C4E00E5006A /* TalentedIncUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84AEAF2B20C75C4E00E5006A /* TalentedIncUITests.swift */,
+				84AEAF2D20C75C4F00E5006A /* Info.plist */,
+			);
+			path = TalentedIncUITests;
+			sourceTree = "<group>";
+		};
+		EE6FC4522E5FF03210E4B483 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21EFB19A60805FA02ECB5C82 /* Pods_TalentedInc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84AEAF0720C75C3500E5006A /* TalentedInc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AEAF3020C75C4F00E5006A /* Build configuration list for PBXNativeTarget "TalentedInc" */;
+			buildPhases = (
+				4283BC9866F21CC7A16E80C2 /* [CP] Check Pods Manifest.lock */,
+				84AEAF0420C75C3500E5006A /* Sources */,
+				84AEAF0520C75C3500E5006A /* Frameworks */,
+				84AEAF0620C75C3500E5006A /* Resources */,
+				CE08AD162D70153A08CAC227 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalentedInc;
+			productName = TalentedInc;
+			productReference = 84AEAF0820C75C3500E5006A /* TalentedInc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84AEAF1B20C75C4E00E5006A /* TalentedIncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AEAF3320C75C4F00E5006A /* Build configuration list for PBXNativeTarget "TalentedIncTests" */;
+			buildPhases = (
+				84AEAF1820C75C4E00E5006A /* Sources */,
+				84AEAF1920C75C4E00E5006A /* Frameworks */,
+				84AEAF1A20C75C4E00E5006A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84AEAF1E20C75C4E00E5006A /* PBXTargetDependency */,
+			);
+			name = TalentedIncTests;
+			productName = TalentedIncTests;
+			productReference = 84AEAF1C20C75C4E00E5006A /* TalentedIncTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84AEAF2620C75C4E00E5006A /* TalentedIncUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84AEAF3620C75C4F00E5006A /* Build configuration list for PBXNativeTarget "TalentedIncUITests" */;
+			buildPhases = (
+				84AEAF2320C75C4E00E5006A /* Sources */,
+				84AEAF2420C75C4E00E5006A /* Frameworks */,
+				84AEAF2520C75C4E00E5006A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84AEAF2920C75C4E00E5006A /* PBXTargetDependency */,
+			);
+			name = TalentedIncUITests;
+			productName = TalentedIncUITests;
+			productReference = 84AEAF2720C75C4E00E5006A /* TalentedIncUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84AEAF0020C75C3500E5006A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					84AEAF0720C75C3500E5006A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					84AEAF1B20C75C4E00E5006A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 84AEAF0720C75C3500E5006A;
+					};
+					84AEAF2620C75C4E00E5006A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 84AEAF0720C75C3500E5006A;
+					};
+				};
+			};
+			buildConfigurationList = 84AEAF0320C75C3500E5006A /* Build configuration list for PBXProject "TalentedInc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84AEAEFF20C75C3500E5006A;
+			productRefGroup = 84AEAF0920C75C3500E5006A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84AEAF0720C75C3500E5006A /* TalentedInc */,
+				84AEAF1B20C75C4E00E5006A /* TalentedIncTests */,
+				84AEAF2620C75C4E00E5006A /* TalentedIncUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84AEAF0620C75C3500E5006A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8481A2C220D17F6A00449737 /* backgroundflat.png in Resources */,
+				8481A2D420D19DA300449737 /* phoneicon.png in Resources */,
+				8481A2C520D195B700449737 /* placeholder.png in Resources */,
+				8481A2D220D19DA300449737 /* mailicon.png in Resources */,
+				8481A2D520D19DA300449737 /* cakeicon.png in Resources */,
+				84AEAF1620C75C4E00E5006A /* LaunchScreen.storyboard in Resources */,
+				84AEAF1320C75C4E00E5006A /* Assets.xcassets in Resources */,
+				846ABDF820D2F5890002CDC6 /* offeredCourses.storyboard in Resources */,
+				8481A2D320D19DA300449737 /* locationicon.png in Resources */,
+				84767A3620D1BB72006F1B8C /* skillbackground.png in Resources */,
+				8481A2C020D17AA700449737 /* profile.storyboard in Resources */,
+				84AEAF1120C75C3500E5006A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AEAF1A20C75C4E00E5006A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AEAF2520C75C4E00E5006A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4283BC9866F21CC7A16E80C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalentedInc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE08AD162D70153A08CAC227 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TalentedInc/Pods-TalentedInc-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TalentedInc/Pods-TalentedInc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84AEAF0420C75C3500E5006A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DD98B320D6D1020046508F /* InstructorCoursesClient.swift in Sources */,
+				8481A2D920D1A2C400449737 /* ProfileViewController.swift in Sources */,
+				84AEAF0E20C75C3500E5006A /* ViewController.swift in Sources */,
+				848239AF20D5E1DC00632CAE /* OfferedCourseDetails.swift in Sources */,
+				84DD98AF20D6CBC70046508F /* InstructorOfferedCourses.swift in Sources */,
+				84DD98B520D6D2E50046508F /* InstructorCoursesViewModel.swift in Sources */,
+				848239AB20D5D02700632CAE /* OfferedCourse.swift in Sources */,
+				84AEAF0C20C75C3500E5006A /* AppDelegate.swift in Sources */,
+				84DD98B120D6CE7E0046508F /* instructorCustomCell.swift in Sources */,
+				846ABDFB20D2FA3D0002CDC6 /* OfferedCoursesCustomCell.swift in Sources */,
+				846ABDFD20D53E6E0002CDC6 /* OfferedCoursesViewController.swift in Sources */,
+				846ABDFF20D54EA50002CDC6 /* offeredCoursesClient.swift in Sources */,
+				844992D220D557190089C63F /* OfferedCoursesViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AEAF1820C75C4E00E5006A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AEAF2120C75C4E00E5006A /* TalentedIncTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AEAF2320C75C4E00E5006A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AEAF2C20C75C4E00E5006A /* TalentedIncUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84AEAF1E20C75C4E00E5006A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84AEAF0720C75C3500E5006A /* TalentedInc */;
+			targetProxy = 84AEAF1D20C75C4E00E5006A /* PBXContainerItemProxy */;
+		};
+		84AEAF2920C75C4E00E5006A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84AEAF0720C75C3500E5006A /* TalentedInc */;
+			targetProxy = 84AEAF2820C75C4E00E5006A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84AEAF0F20C75C3500E5006A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84AEAF1020C75C3500E5006A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84AEAF1420C75C4E00E5006A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84AEAF1520C75C4E00E5006A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84AEAF2E20C75C4F00E5006A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84AEAF2F20C75C4F00E5006A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84AEAF3120C75C4F00E5006A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B633C0B1618E733ACF4842 /* Pods-TalentedInc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalentedInc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Inc.TalentedInc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84AEAF3220C75C4F00E5006A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 923324970B4CD1BF1BAD13F5 /* Pods-TalentedInc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalentedInc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Inc.TalentedInc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84AEAF3420C75C4F00E5006A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalentedIncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Inc.TalentedIncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalentedInc.app/TalentedInc";
+			};
+			name = Debug;
+		};
+		84AEAF3520C75C4F00E5006A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalentedIncTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Inc.TalentedIncTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalentedInc.app/TalentedInc";
+			};
+			name = Release;
+		};
+		84AEAF3720C75C4F00E5006A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalentedIncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Inc.TalentedIncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TalentedInc;
+			};
+			name = Debug;
+		};
+		84AEAF3820C75C4F00E5006A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TalentedIncUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Inc.TalentedIncUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TalentedInc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84AEAF0320C75C3500E5006A /* Build configuration list for PBXProject "TalentedInc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AEAF2E20C75C4F00E5006A /* Debug */,
+				84AEAF2F20C75C4F00E5006A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AEAF3020C75C4F00E5006A /* Build configuration list for PBXNativeTarget "TalentedInc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AEAF3120C75C4F00E5006A /* Debug */,
+				84AEAF3220C75C4F00E5006A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AEAF3320C75C4F00E5006A /* Build configuration list for PBXNativeTarget "TalentedIncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AEAF3420C75C4F00E5006A /* Debug */,
+				84AEAF3520C75C4F00E5006A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84AEAF3620C75C4F00E5006A /* Build configuration list for PBXNativeTarget "TalentedIncUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84AEAF3720C75C4F00E5006A /* Debug */,
+				84AEAF3820C75C4F00E5006A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84AEAF0020C75C3500E5006A /* Project object */;
+}
